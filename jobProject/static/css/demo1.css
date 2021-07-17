@@ -1,0 +1,33 @@
+body{
+background-image: url(C:\Users\Admin\Desktop\rain.jpg);
+  background-color:maroon;
+}
+.container ,.jumbotron{
+  background-color: maroon;
+  color: white;
+  margin-top: 50px;
+  border-radius: 40px 40px 40px 40px;
+}
+
+h1,th{
+  background: green;
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 15px 15px 15px 15px;
+}
+td{
+  background: black;
+  color:orange;
+  font-size: 20px;
+}
+img{
+  height: 250px;
+  width: 250px;
+  border: 5px solid red;
+  border-radius: 15px 15px 15px 15px;
+
+}
+#img2{
+  float: right;
+}

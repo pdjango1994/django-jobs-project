@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/demo1.css"%} ">
+  </head>
+  <body>
+    <h1>Thane Job Information</h1>
+    <img src="{%static "images/thane1.jpg"%}" >
+    <img src="{%static "images/bati.jpg"%}" alt="" id="img2" >
+    {%if job_list%}
+    <table border="1">
+      <tr>
+      <th>Date</th>
+      <th>Company</th>
+      <th>Title</th>
+      <th>Eligibility</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Phone</th>
+      </tr>
+      {%for job in job_list%}
+      <tr>
+        <td>{{job.date}}</td>
+        <td>{{job.company}}</td>
+        <td>{{job.title}}</td>
+        <td>{{job.eligibility}}</td>
+        <td>{{job.address}}</td>
+        <td>{{job.email}}</td>
+        <td>{{job.phone}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+    {%endif%}
+  </body>
+</html>
